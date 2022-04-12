@@ -42,7 +42,7 @@ try:
         print(n)
         gp.output(leds, d2b(2**n-1))
         time.sleep(0.2)
-except KeyBoardInterrupt:
+except KeyboardInterrupt:
     print("---------------Emergency stop---------------")
 finally:
     gp.output(dac, 0)
