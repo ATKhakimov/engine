@@ -36,7 +36,7 @@ try:
     while flag:
         voltage =  adc()
         print("voltage meaning ", voltage*MVolt/level, "dec", voltage)
-except KeyBoardInterrupt:
+except KeyboardInterrupt:
     print("---------------Emergency stop---------------")
 finally:
     gp.output(dac, 0)
